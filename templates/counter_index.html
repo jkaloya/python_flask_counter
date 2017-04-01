@@ -1,0 +1,16 @@
+<html>
+    <head>
+       <title>View Counter</title>
+    </head>
+    <body>
+        <h3>Counter</h3>
+        <h5>{{session['view']}} times</h5>
+        <form action='/plus2' method="get" id="myform">
+        <input type='submit' value='Submit'>
+        </form>
+
+        <form action='/reset' method="get" id="myreset">
+            <input type="submit" value="Reset" name="Reset" form="myreset">
+        </form>
+    </body>
+</html>
